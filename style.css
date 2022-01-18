@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: linear-gradient(#e66465, #9198e5); */
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(228,75,75);
+    background: linear-gradient(159deg, rgba(228,75,75,1) 0%, rgba(152,26,127,1) 100%, rgba(2,0,36,1) 100%);
+}
+
+.container {
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.left, .right {
+    background-color: #C27C92;
+    width: 50%;
+}
+
+.bg-active {
+    background-color: #E0B0B9;
+    transition: 2s;
+}
+
+.bg-winner {
+    background-color: #2f2f2f;
+    transition: 2s;
+}
+
+.info {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.result-player1, .result-player2 {
+    color: #C6365F;
+    font-size: 60px;
+}
+
+.current {
+    background-color: #C6365F;
+    border-radius: 10px;
+    color: white;
+}
+
+.current div {
+    padding: 20px;
+    font-size: 25px;
+}
+.result, .current-score1, .current-score2 {
+    padding: 40px 0;
+}
+
+.current-score1, .current-score2 {
+    font-size: 45px;
+}
+
+button {
+    border: none;
+    padding: 8px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    background:white;
+    background:rgba(255,255,255,0.8);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: bisque;
+}
+
+button:active {
+    height:10%;
+}
+
+.new-game {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.roll-dice {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hold {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100px;
+}
+
+.dice img {
+    width: 100%;
+    -webkit-box-shadow: 0px 3px 10px 2px rgb(170, 144, 144); 
+    box-shadow: 0px 3px 10px 2px rgb(170, 144, 144);
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
